@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RepeatLab4OOP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="LBX_AllActivities" HorizontalAlignment="Left" Height="240" Margin="124,97,0,0" VerticalAlignment="Top" Width="268" SelectionChanged="LBX_AllActivities_SelectionChanged"/>
+        <ListBox x:Name="LBX_SelectedActivities" HorizontalAlignment="Left" Height="240" Margin="506,97,0,0" VerticalAlignment="Top" Width="279"/>
+        <Button x:Name="BTN_AddActivity" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="415,141,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="BTN_RemoveActivity" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="415,182,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton x:Name="RADBTN_All" Content="All" HorizontalAlignment="Left" Margin="12,97,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RADBTN_Land" Content="Land" HorizontalAlignment="Left" Margin="12,143,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RADBTN_Water" Content="Water" HorizontalAlignment="Left" Margin="12,189,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RADBTN_Air" Content="Air" HorizontalAlignment="Left" Margin="12,234,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,342,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Height="17" Width="96"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,10,0,0" TextWrapping="Wrap" Text="Activity Planner" VerticalAlignment="Top" Height="58" Width="268"/>
+        <TextBlock HorizontalAlignment="Left" Margin="524,10,0,0" TextWrapping="Wrap" Text="Total Cost" VerticalAlignment="Top" Height="48" Width="68"/>
+        <TextBox x:Name="TXTBX_TotalCost" HorizontalAlignment="Left" Height="48" Margin="597,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,68,0,0" TextWrapping="Wrap" Text="All Activities" VerticalAlignment="Top" Height="24" Width="171"/>
+        <TextBlock HorizontalAlignment="Left" Margin="515,68,0,0" TextWrapping="Wrap" Text="Selected Activities" VerticalAlignment="Top" Height="24" Width="179"/>
+        <TextBox x:Name="TXTBX_Description" HorizontalAlignment="Left" Height="49" Margin="124,364,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="303"/>
+
     </Grid>
 </Window>
