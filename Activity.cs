@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepeatLab4OOP
 {
-    class Activity : IComparable
+   public class Activity : IComparable
     {
         public string Name { get; set; }
         public DateTime ActivityDate { get; set; }
@@ -25,7 +25,7 @@ namespace RepeatLab4OOP
 
         public override string ToString()
         {
-            return string.Format($"{Name} {ActivityDate} ");
+            return string.Format($"{Name} {ActivityDate} {0} ");
         }
         public int CompareTo(object obj)
         {
